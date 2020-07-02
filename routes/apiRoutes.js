@@ -5,8 +5,7 @@ const fs = require('fs');
 let id = db.length + 1;
 
 module.exports = function (app) {
-	app.post(function (req, res) {
-		console.log(req.body);
+	app.post('/api/notes', function (req, res) {
 		req.body.id = id++;
 		db.push(req.body);
 		// this request is coming from server.js so only need ./ local
