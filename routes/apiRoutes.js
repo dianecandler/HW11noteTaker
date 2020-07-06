@@ -6,7 +6,11 @@ let id = db.length + 1;
 
 module.exports = function (app) {
 	app.post('/api/notes', function (req, res) {
+		console.log(req.body);
+
 		req.body.id = id++;
+		console.log(req.body);
+
 		db.push(req.body);
 		// this request is coming from server.js so only need ./ local
 		fs.writeFile('./db/db.json', JSON.stringify(db), function (err) {
