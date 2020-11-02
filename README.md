@@ -1,4 +1,4 @@
-# Homework 11 - Express: Note Taker
+# Express: Note Taker
 
 Stay organized - write, save, delete notes!
 
