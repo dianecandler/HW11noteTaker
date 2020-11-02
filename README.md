@@ -1,20 +1,18 @@
 # Homework 11 - Express: Note Taker
 
-## Description
+Stay organized - write, save, delete notes!
 
-Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
+This application uses an express backend and save and retrieve note data from a JSON file.
 
-* The application frontend was provided and used build the backend and connect the two.
+* HTML routes were created:
 
-* The following HTML routes should be created:
+  * GET `/notes` - return the `notes.html` file.
 
-  * GET `/notes` - Should return the `notes.html` file.
+  * GET `*` - return the `index.html` file
 
-  * GET `*` - Should return the `index.html` file
+* `db.json` file on the backend is used to store and retrieve notes using the `fs` module.
 
-* The application should have a `db.json` file on the backend that will be used to store and retrieve notes using the `fs` module.
-
-* The following API routes were created:
+* API routes were created:
 
   * GET `/api/notes` reads `db.json` file and returns all saved notes as JSON.
 
