@@ -15,6 +15,12 @@ This application uses an express backend, saving and retrieving JSON stored data
       1. read all notes from the `db.json` file
       2. remove the note with the given `id` property
       3. rewrite the notes to the `db.json` file
+      
+ ### View this program?
+ 
+ Type  **npm start**  to view program on http://localhost:3000/
+ *(currently unable to host on Heroku - out of space)*
+ 
 
 ## User Story
 
